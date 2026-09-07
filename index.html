@@ -40,6 +40,11 @@ section{padding:100px 7vw}
 .about-photo{width:100%;display:block;aspect-ratio:1680 / 1116;object-fit:cover}
 .email span{display:block;color:#777;font:10px Arial,sans-serif;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
 .email a{color:#cbb98d}
+.social-links{display:flex;gap:14px;margin-top:24px;align-items:center}
+.social-links a{display:flex;width:38px;height:38px;align-items:center;justify-content:center;transition:transform .25s ease,opacity .25s ease}
+.social-links a:hover{transform:translateY(-2px);opacity:.8}
+.social-links svg{width:38px;height:38px;display:block}
+
 footer{padding:25px 7vw;border-top:1px solid #fff2;color:#777;font:10px Arial,sans-serif;display:flex;justify-content:space-between}
 .lb{display:none;position:fixed;z-index:50;inset:0;background:#000f;align-items:center;justify-content:center;padding:50px}
 .lb.open{display:flex}
@@ -142,12 +147,17 @@ footer{display:block}footer span{display:block;margin:5px 0}
         <span>Электронная почта</span>
         <a href="mailto:it1420@lenta.ru">it1420@lenta.ru</a>
       </div>
-	  
-<div class="social-links">
-  <a href="https://ok.ru/" target="_blank" rel="noopener noreferrer">Одноклассники</a>
-  <a href="https://vk.ru/id360365160" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-  <a href="https://www.facebook.com/groups/1428669620528266/people" target="_blank" rel="noopener noreferrer">Facebook</a>
-</div>
+      <div class="social-links">
+        <a href="https://ok.ru/" target="_blank" rel="noopener noreferrer" aria-label="Одноклассники">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#FF7700"/><path fill="#fff" d="M12 5.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm0 2.1a1.7 1.7 0 1 1 0 3.4 1.7 1.7 0 0 1 0-3.4Zm0 6.2c-1.9 0-3.6-.6-4.8-1.7l1.4-1.5c.9.8 2.1 1.1 3.4 1.1s2.5-.4 3.4-1.1l1.4 1.5c-1.2 1.1-2.9 1.7-4.8 1.7Zm-1.2.7v1.3l-2.6 2.6 1.5 1.5 2.3-2.3 2.3 2.3 1.5-1.5-2.6-2.6v-1.3h-2.4Z"/></svg>
+        </a>
+        <a href="https://vk.ru/id360365160" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#0077FF"/><path fill="#fff" d="M6.5 8.1c.1 3.9 2 6.2 5.4 6.2h.2v-2.2c1.2.1 2.2.9 2.6 2.2H17c-.5-1.8-1.6-2.8-2.4-3.2.8-.4 1.8-1.4 2.1-3H14.8c-.3 1.2-1.2 2.3-2.7 2.4V8.1H10v4.3c-1.5-.4-2.8-1.7-2.9-4.3H6.5Z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/groups/1428669620528266/people" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.5 20v-7h2.3l.4-2.7h-2.7V8.6c0-.8.2-1.3 1.4-1.3h1.5V4.9c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v1.7H8v2.7h2.5v7h3Z"/></svg>
+        </a>
+      </div>
     </div>
     <div>
       <img class="about-photo" src="О%20фотографе/photographer.webp" alt="Торгман Игорь Юрьевич — пейзажный фотограф" loading="eager" decoding="async">
