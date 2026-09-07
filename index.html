@@ -60,6 +60,49 @@ footer{display:block}footer span{display:block;margin:5px 0}
 .about-content{display:flex;flex-direction:column;gap:35px}
 .hero-logo{top:105px;right:6vw;width:90px;height:90px;opacity:.7}
 }
+
+/* Responsive category menu */
+#cats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:8px 10px;
+  max-width:1100px;
+  margin:0 auto 24px;
+}
+#cats button{
+  white-space:nowrap;
+}
+@media (max-width:900px){
+  #cats{
+    gap:7px 8px;
+    max-width:760px;
+  }
+}
+@media (max-width:600px){
+  #cats{
+    justify-content:center;
+    gap:7px 6px;
+    padding:0 8px;
+    margin-bottom:20px;
+  }
+  #cats button{
+    font-size:14px;
+    padding:8px 10px;
+  }
+}
+@media (max-width:380px){
+  #cats{
+    gap:6px 5px;
+    padding:0 5px;
+  }
+  #cats button{
+    font-size:13px;
+    padding:7px 8px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -123,7 +166,7 @@ footer{display:block}footer span{display:block;margin:5px 0}
 "use strict";
 
 const data=Array.isArray(window.PHOTOS)?window.PHOTOS:[];
-const cats=["Все","Храмы","Леса","Озера и Реки","Архитектура"];
+const cats=["Все","Храмы","Леса","Озера и Реки","Архитектура","Отражение","Рассветы и Закаты","Туманы"];
 const gallery=document.getElementById("gallery");
 const filters=document.getElementById("filters");
 const hero=document.getElementById("hero");
